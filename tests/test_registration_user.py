@@ -30,7 +30,7 @@ def test_registration_form(setup_browser):
         registration_page.upload_file('/tests/resources/1.png')
     with allure.step('Заполнить поле address'):
         registration_page.fill_address('Address')
-    with allure.step('ЗВыбрать значение state'):
+    with allure.step('Выбрать значение state'):
         registration_page.select_state('NCR')
     with allure.step('Выбрать значение city'):
         registration_page.select_city('Delhi')
