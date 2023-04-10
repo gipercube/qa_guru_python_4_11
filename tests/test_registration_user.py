@@ -27,7 +27,7 @@ def test_registration_form(setup_browser):
     with allure.step('Заполнить поле subjects'):
         registration_page.fill_subjects('Arts')
     with allure.step('Загрузить файл в поле upload file'):
-        registration_page.upload_file('\\tests\\resources\\1.png')
+        registration_page.upload_file('/tests/resources/1.png')
     with allure.step('Заполнить поле address'):
         registration_page.fill_address('Address')
     with allure.step('ЗВыбрать значение state'):
