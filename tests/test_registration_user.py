@@ -5,7 +5,7 @@ from automation_practice_form.model.pages.registration_page import RegistrationP
 
 def test_registration_form(setup_browser):
     # GIVEN
-    with allure.step('Открыть главную страницу github.com'):
+    with allure.step('Открыть главную страницу'):
         registration_page = RegistrationPage(setup_browser)
         registration_page.open()
 
